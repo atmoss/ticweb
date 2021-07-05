@@ -15,3 +15,4 @@ services:
             - ./src:/usr/share/nginx/html
             - ./letsencrypt:/etc/letsencrypt
         restart: always
+

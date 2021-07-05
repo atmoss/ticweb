@@ -3,7 +3,7 @@ FROM nginx:stable
 RUN rm /etc/nginx/nginx.conf
 COPY nginx.conf /etc/nginx/
 
-ARG CERTBOT_EMAIL=info@domain.com
+ARG CERTBOT_EMAIL=contacto@ticsalud.cl
 ARG DOMAIN_LIST
 
 RUN  apt-get update \

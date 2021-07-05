@@ -13,5 +13,5 @@ services:
             - 443:443
         volumes:
             - ./src:/usr/share/nginx/html
-            - letsencrypt:/etc/letsencrypt
+            - ./letsencrypt:/etc/letsencrypt
         restart: always

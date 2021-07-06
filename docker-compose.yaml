@@ -4,9 +4,7 @@ services:
     nginx:
         build:
             context: ./nginx
-            args:
-              - CERTBOT_EMAIL=contacto@ticsalud.cl #replace with your own email
-              - DOMAIN_LIST=ticsalud.cl, www.ticsalud.cl #replace with your own
+
 
         ports:
             - 80:80

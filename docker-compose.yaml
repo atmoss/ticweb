@@ -9,4 +9,5 @@ services:
         volumes:
             - ./src:/usr/share/nginx/html
             - ./letsencrypt/live/www.ticsalud.cl:/etc/letsencrypt/live/www.ticsalud.cl
+            - ./letsencrypt:/etc/letsencrypt
         build: ./nginx

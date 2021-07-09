@@ -4,7 +4,7 @@ RUN rm /etc/nginx/nginx.conf
 COPY nginx.conf /etc/nginx/
 
 ARG CERTBOT_EMAIL=contacto@ticsalud.cl
-ARG DOMAIN_LIST=ticsalud.cl
+ARG DOMAIN_LIST=www.ticsalud.cl
 
 RUN  apt-get update
 

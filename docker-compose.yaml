@@ -1,15 +1,12 @@
-version: "3.4"
+version: "3"
 
 services:
-    nginx:
-        build:
-            context: ./nginx
-
+    client:
+        image: nginx
         ports:
             - 80:80
             - 443:443
         volumes:
             - ./src:/usr/share/nginx/html
             - ./letsencrypt:/etc/letsencrypt
-        restart: always
-
+        build: ./nginx

@@ -7,7 +7,7 @@ services:
             - 80:80
             - 443:443
         volumes:
-            - ./src:/usr/share/nginx/html
-            - ./letsencrypt/live/www.ticsalud.cl:/etc/letsencrypt/live/www.ticsalud.cl
-            - ./letsencrypt:/etc/letsencrypt
+            - ./src:/usr/share/nginx/html/
+            - ./letsencrypt/live/www.ticsalud.cl:/etc/letsencrypt/live/www.ticsalud.cl/
+            - ./letsencrypt:/etc/letsencrypt/
         build: ./nginx
